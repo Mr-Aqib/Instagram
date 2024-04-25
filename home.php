@@ -58,14 +58,23 @@
         {
             font-size: 15px;
         }
+        .imgs
+        {
+            right: 54.5%;
+            top: 10.5% !important;
+        }
     </style>
 </head>
 
 <body>
     <div class="container row mx-auto my-5   col-lg-8">
         <!-- Images device-width -->
-        <div class="col-lg-6">
-            <img  width="100%" src="./images/home-phones.png" alt="">
+        <div class="col-lg-6 " >
+            <img width="100%" src="./images/home-phones.png" alt="">
+            <img class="imgs position-absolute top-0" width="17%" height="79.5%" src="./images/screenshot1.png" alt="">
+            <img class="imgs position-absolute top-0" width="17%" height="79.5%" src="./images/screenshot2.png" alt="">
+            <img class="imgs position-absolute top-0" width="17%" height="79.5%" src="./images/screenshot3.png" alt="">
+            <img class="imgs position-absolute top-0" width="17%" height="79.5%" src="./images/screenshot4.png" alt="">
         </div>
         <!-- Home-login-Div -->
         <div class="col-lg-5 col-9 px-4  d-flex flex-column gap-3 ">
