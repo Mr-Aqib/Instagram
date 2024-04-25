@@ -44,7 +44,7 @@
         }
         .upper-div
         {
-            padding:35px ;
+            padding:40px ;
         }
         .middle-a
         {
@@ -62,11 +62,13 @@
 </head>
 
 <body>
-    <div class="container row mx-auto  my-5  col-lg-8">
-        <div class="col-lg-5 ">
-            <img width="100%" src="./images/home-phones.png" alt="">
+    <div class="container row mx-auto my-5   col-lg-8">
+        <!-- Images device-width -->
+        <div class="col-lg-6">
+            <img  width="100%" src="./images/home-phones.png" alt="">
         </div>
-        <div class="col-lg-5 col-9 px-4 mx-auto d-flex flex-column gap-3 ">
+        <!-- Home-login-Div -->
+        <div class="col-lg-5 col-9 px-4  d-flex flex-column gap-3 ">
             <div class="upper-div border">
             <img class=" d-block mx-auto" width="60%" src="./images/insta-logo.png" alt="">
             <div class="input-div d-flex flex-column gap-2 my-2">
