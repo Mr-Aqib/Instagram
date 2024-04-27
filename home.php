@@ -67,13 +67,14 @@
           
         
         }
+     
     </style>
 </head>
 
 <body>
     <div class="container row mx-auto my-5   col-lg-8">
         <!-- Images device-width -->
-        <div class="col-lg-6 position-relative" >
+        <div class="col-lg-6 position-relative img-sec" >
             <img width="100%" src="./images/home-phones.png" alt="">
             <img class="imgs position-absolute"  src="./images/screenshot1.png" alt="">
             <img class="imgs position-absolute"  src="./images/screenshot2.png" alt="">
