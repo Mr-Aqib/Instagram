@@ -17,17 +17,18 @@
         input {
             background-color: #FAFAFA !important;
         }
-        @media only screen and (max-width:700px) {
-            .upperdiv
+        @media only screen and (max-width:600px) {
+            .upperdiv,.lastdiv,.middle-div
             {
-
+                width: 100% !important;
+                border: none !important;
             }
             
         }
     </style>
 </head>
 <body>
-    <div class="container col-lg-7  ">
+    <div class="container col-lg-7   ">
         <div class="upperdiv my-3  border  mx-auto" style="width: 330px;padding:10px 2.9rem">
             <img class="mx-auto d-block" width="180px" src="./images/insta-logo.png" alt="">
            <p  class="" style="font-weight:bold; font-size:14px; color:#737373; text-align: center">Sign up to see photos and videos from your friends.</p>
@@ -52,7 +53,7 @@
         <div class="middle-div my-3  border  mx-auto" style="width: 330px;padding:1.4rem">
         <p style="font-size: 14px;"  class=" d-block text-center m-0" >Have an account? <a href="" style="font-size:15px; text-decoration:none;font-weight:bold;color:#0095F7" > Log in</a></p>
         </div>
-        <div  class="upperdiv my-3  mx-auto" style="width: 330px;padding:10px 2.9rem">
+        <div  class="lastdivs my-3  mx-auto" style="width: 330px;padding:10px 2.9rem">
             <p style="font-size:15px" class="text-center" >Get the App.</p>
             <div class="d-flex gap-2 justify-content-center">
                 <img width="50%"   src="./images/playstore-logo.png" alt="">
