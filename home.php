@@ -74,7 +74,8 @@
 <body>
     <div class="container row mx-auto my-5   col-lg-8">
         <!-- Images device-width -->
-        <div class="col-lg-6 position-relative img-sec" >
+        <div class="col-lg-6 col-9 d-flex
+         position-relative img-sec" >
             <img width="100%" src="./images/home-phones.png" alt="">
             <img class="imgs position-absolute"  src="./images/screenshot1.png" alt="">
             <img class="imgs position-absolute"  src="./images/screenshot2.png" alt="">
@@ -87,7 +88,11 @@
             <img class=" d-block mx-auto" width="60%" src="./images/insta-logo.png" alt="">
             <div class="input-div d-flex flex-column gap-2 my-2">
                 <input type="text" class="rounded-0 form-control" placeholder="Phone number, usernname or email address" name="username" id="">
+                <div class="d-flex">
                 <input type="password" class="rounded-0 form-control" placeholder="Password" name="username" id="">
+                <i class="bi bi-eye-fill"></i>
+
+                </div>
                 <button class="text-white  sign-in-btn w-100 my-2 py-1 rounded-2">Log in</button>
             </div>
             <div class="hr d-flex align-items-center justify-content-center gap-3 my-2 ">
@@ -104,7 +109,7 @@
             <a href="" class="my-3 d-flex align-items-center justify-content-center forgert-a ">Forget Your Password?</a>
         </div>
         <div class="middle-div border d-flex align-items-center justify-content-center py-3 ">
-            <p class="middle-p align-items-center m-0 d-flex gap-1">Don't have an account? <a href="" class="text-decoration-none fw-bold middle-a">Sign up</a></p>
+            <p class="middle-p align-items-center m-0 d-flex gap-1">Don't have an account? <a href="./signup-form.php" class="text-decoration-none fw-bold middle-a">Sign up</a></p>
         </div>
         <div class="lastdiv  d-flex flex-column align-items-center justify-content-center">
             <p class="last-a d-flex align-items-center">Get the App ?</p>

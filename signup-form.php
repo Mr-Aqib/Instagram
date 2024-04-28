@@ -29,7 +29,7 @@
 </head>
 <body>
     <div class="container col-lg-7   ">
-        <div class="upperdiv my-3  border  mx-auto" style="width: 330px;padding:10px 2.9rem">
+        <div class="upperdiv my-3  border  mx-auto" style="width: 350px;padding:10px 2.9rem">
             <img class="mx-auto d-block" width="180px" src="./images/insta-logo.png" alt="">
            <p  class="" style="font-weight:bold; font-size:14px; color:#737373; text-align: center">Sign up to see photos and videos from your friends.</p>
             <button class=" d-flex align-items-center justify-content-center btn btn-primary  mx-auto d-block px-3 " style="background:#0095F6">
@@ -41,23 +41,26 @@
             <p class="m-0" style="font-size:12px;font-weight:bold; color:#737373">OR</p>
             <hr style="width: 100px">
             </div>
-            <input type="text" name="email" placeholder="Mobile number or email address" id="" class="form-control rounded-0">
+            <form action="./signup-data.php" method="POST">
+            <input type="email" name="email" placeholder="Mobile number or email address" id="" class="form-control rounded-0">
             <input type="text" name="fullname" placeholder="Full Name" id="" class="form-control rounded-0">
             <input type="text" name="username" placeholder="Username" id="" class="form-control rounded-0">
             <input type="password" name="password" placeholder="Password" id="" class="form-control rounded-0">
+          
             <p class="my-3 text-center" style="color:#737373; font-size: 65%;">People who use our service may have uploaded your contact information to Instagram. <a  style="color:#00376B; text-decoration: none;" href="">Learn more</a> </p>
             <p class="my-3 text-center" style=" color:#737373; font-size: 71%;">By signing up, you agree to our <a style="text-decoration: none;color:#00376B" href="">Terms</a> ,
             <a style="text-decoration: none;color:#00376B" href="">Privacy Policy</a>   and <a style="text-decoration: none;color:#00376B" href="">Cookies Policy.</a>  </p>
             <button class="my-3 btn w-100 text-white" style="background-color:#4CB5F9;font-size:14px; font-weight:bold">Sign Up</button>
+            </form>
         </div>
-        <div class="middle-div my-3  border  mx-auto" style="width: 330px;padding:1.4rem">
+        <div class="middle-div my-3  border  mx-auto" style="width: 350px;padding:1.4rem">
         <p style="font-size: 14px;"  class=" d-block text-center m-0" >Have an account? <a href="" style="font-size:15px; text-decoration:none;font-weight:bold;color:#0095F7" > Log in</a></p>
         </div>
-        <div  class="lastdivs my-3  mx-auto" style="width: 330px;padding:10px 2.9rem">
+        <div  class="lastdivs my-3  mx-auto" style="width: 350px;padding:10px 2.9rem">
             <p style="font-size:15px" class="text-center" >Get the App.</p>
             <div class="d-flex gap-2 justify-content-center">
-                <img width="50%"   src="./images/playstore-logo.png" alt="">
-                <img width="50%" src="./images/microsoft-logo.png" alt="">
+                <img width="45%"   src="./images/playstore-logo.png" alt="">
+                <img width="45%" src="./images/microsoft-logo.png" alt="">
             </div>
         </div>
         </div>
