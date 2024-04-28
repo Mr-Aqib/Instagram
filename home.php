@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <?php include "./BS-CSS.php"?>
     <title>Instagram</title>
     <style>
         input {
@@ -86,11 +85,13 @@
         <div class="col-lg-5 col-9 px-4  d-flex flex-column gap-3 ">
             <div class="upper-div border">
             <img class=" d-block mx-auto" width="60%" src="./images/insta-logo.png" alt="">
-            <div class="input-div d-flex flex-column gap-2 my-2">
-                <input type="text" class="rounded-0 form-control" placeholder="Phone number, usernname or email address" name="username" id="">
-                <div class="d-flex">
-                <input type="password" class="rounded-0 form-control" placeholder="Password" name="username" id="">
-                <i class="bi bi-eye-fill"></i>
+            <div class="input-div d-flex flex-column gap-2 my-2 " >
+                <input type="text" class="rounded-0 form-control" placeholder="Phone number, usernname or email address" name="username" >
+                <div class="d-flex align-items-center border" style="  background-color: #FAFAFA !important">
+                <input type="password" class="rounded-0 form-control passin" placeholder="Password" name="username"  style="border:none">
+               <span>
+               <i class="bi eyeicon bi-eye-fill p-2"></i>
+               </span>
 
                 </div>
                 <button class="text-white  sign-in-btn w-100 my-2 py-1 rounded-2">Log in</button>
@@ -121,5 +122,7 @@
         </div>
     </div>
 </body>
-<script src="./home.js"></script>
+
+<script src="./home2.js"></script>
+
 </html>
