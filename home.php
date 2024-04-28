@@ -9,7 +9,11 @@
         input {
             background-color: #FAFAFA !important;
         }
-
+        input[type='password']
+        {
+          
+            box-shadow: 0 0 0 0 !important;
+        }
         input::placeholder {
             color: black;
             font-size: 0.8rem;
@@ -66,7 +70,7 @@
           
         
         }
-     
+       
     </style>
 </head>
 
@@ -90,7 +94,7 @@
                 <div class="d-flex align-items-center border" style="  background-color: #FAFAFA !important">
                 <input type="password" class="rounded-0 form-control passin" placeholder="Password" name="username"  style="border:none">
                <span>
-               <i class="bi eyeicon bi-eye-fill p-2"></i>
+               <i class="bi eyeicon bi-eye-fill p-2 " style="display:none"></i>
                </span>
 
                 </div>
@@ -122,7 +126,6 @@
         </div>
     </div>
 </body>
-
 <script src="./home2.js"></script>
 
 </html>
