@@ -70,7 +70,14 @@
           
         
         }
-       
+        @media only screen and (max-width:600px)
+        {
+            .img-sec
+            {
+                display: none !important;
+            }
+            
+        }
     </style>
 </head>
 
@@ -86,7 +93,7 @@
             <img class="imgs position-absolute"  src="./images/screenshot4.png" alt="">
         </div>
         <!-- Home-login-Div -->
-        <div class="col-lg-5 col-9 px-4  d-flex flex-column gap-3 ">
+        <div class="col-lg-5  px-4 right-sec d-flex flex-column gap-3 ">
             <div class="upper-div border">
             <img class=" d-block mx-auto" width="60%" src="./images/insta-logo.png" alt="">
             <div class="input-div d-flex flex-column gap-2 my-2 " >

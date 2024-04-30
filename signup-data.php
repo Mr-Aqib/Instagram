@@ -7,12 +7,10 @@ $username=$_POST['username'];
 $password=$_POST['password'];
 
 $signup="INSERT INTO signup (Email,Fullname,Username,Password) Values ('{$email}','{$fullname}','{$username}','{$password}')";
-$userdata=mysqli_query($connection,$signup);
-if($userdata)
+$result=mysqli_query($connection,$signup);
+if($result)
 {
-    $_SESSION['name']=$username;
-    
-   
+  $_SESSION['name']=$fullname;
+  header("Location: $base_url/user_data.php");
 }
-header("Location: $base_url/user_data.php");
 ?>
