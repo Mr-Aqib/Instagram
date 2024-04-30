@@ -1,5 +1,6 @@
 <?php
 session_start();
+$current_url=$_SERVER['HTTP_REFERER'];
   include "./config.php";               
 $email=$_POST['email'];
 $fullname=$_POST['fullname'];
@@ -11,6 +12,11 @@ $result=mysqli_query($connection,$signup);
 if($result)
 {
   $_SESSION['name']=$fullname;
+  $_SESSION['welcome']='Welcome '. $fullname;
   header("Location: $base_url/user_data.php");
+}
+else{
+  $_SESSION["error"]= "Error Occured";
+  header("Location: $base_url/home.php");
 }
 ?>
