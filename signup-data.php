@@ -1,7 +1,7 @@
 <?php
 session_start();
-$current_url=$_SERVER['HTTP_REFERER'];
-  include "./config.php";               
+  include "./config.php";  
+  $current_url=$_SERVER['HTTP_REFERER'];             
 $email=$_POST['email'];
 $fullname=$_POST['fullname'];
 $username=$_POST['username'];
@@ -11,12 +11,11 @@ $signup="INSERT INTO signup (Email,Fullname,Username,Password) Values ('{$email}
 $result=mysqli_query($connection,$signup);
 if($result)
 {
-  $_SESSION['name']=$fullname;
-  $_SESSION['welcome']='Welcome '. $fullname;
-  header("Location: $base_url/user_data.php");
+  $_SESSION['fname']=$fullname;
+  $_SESSION['welcome']="Welcome " . $username;
+  header("Location: $base_url/user-data.php");
 }
-else{
-  $_SESSION["error"]= "Error Occured";
-  header("Location: $base_url/home.php");
+else
+{
+  $_SESSION['err-reg']="Error in Session";
 }
-?>
