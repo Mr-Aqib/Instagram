@@ -43,10 +43,20 @@
             </div>
             <form action="./signup-data.php" method="POST">
             <input type="email" name="email" placeholder="Mobile number or email address" id="" class="form-control rounded-0">
+           
             <input type="text" name="fullname" placeholder="Full Name" id="" class="form-control rounded-0">
             <input type="text" name="username" placeholder="Username" id="" class="form-control rounded-0">
             <input type="password" name="password" placeholder="Password" id="" class="form-control rounded-0">
-          
+            <?php
+                session_start();
+                if(isset($_SESSION['error-email']))
+                {
+                    echo "<p class='text-center fw-bold text-danger'  style='font-size:13px'>
+                    {$_SESSION['error-email']} 
+                    </p>";
+                }
+                unset($_SESSION['error-email']);
+                ?>
             <p class="my-3 text-center" style="color:#737373; font-size: 65%;">People who use our service may have uploaded your contact information to Instagram. <a  style="color:#00376B; text-decoration: none;" href="">Learn more</a> </p>
             <p class="my-3 text-center" style=" color:#737373; font-size: 71%;">By signing up, you agree to our <a style="text-decoration: none;color:#00376B" href="">Terms</a> ,
             <a style="text-decoration: none;color:#00376B" href="">Privacy Policy</a>   and <a style="text-decoration: none;color:#00376B" href="">Cookies Policy.</a>  </p>

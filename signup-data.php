@@ -9,19 +9,14 @@ $password=$_POST['password'];
 
 $signup="INSERT INTO signup (Email,Fullname,Username,Password) Values ('{$email}','{$fullname}','{$username}','{$password}')";
 $result=mysqli_query($connection,$signup);
-if($email == '')
+if($email == '' || $username == ''|| $password == ''|| $signup == '')
 {
-  $_SESSION['error-email']= "Please Enter Your Email";
-
+  $_SESSION['error-email']= "Please above Your Email";
+  header("Location: $current_url");
 }
-if($result)
+else
 {
   $_SESSION['fname']=$fullname;
   $_SESSION['welcome']="Welcome " . $username;
   header("Location: $base_url/user-data.php");
-}
-else
-{
-  $_SESSION['err-reg']="Error in Session";
-  header("Location: $current_url");
 }
