@@ -9,6 +9,11 @@ $password=$_POST['password'];
 
 $signup="INSERT INTO signup (Email,Fullname,Username,Password) Values ('{$email}','{$fullname}','{$username}','{$password}')";
 $result=mysqli_query($connection,$signup);
+if($email == '')
+{
+  $_SESSION['error-email']= "Please Enter Your Email";
+
+}
 if($result)
 {
   $_SESSION['fname']=$fullname;

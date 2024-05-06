@@ -98,6 +98,14 @@
             <img class=" d-block mx-auto" width="60%" src="./images/insta-logo.png" alt="">
             <div class="input-div d-flex flex-column gap-2 my-2 " >
                 <input type="text" class="rounded-0 form-control" placeholder="Phone number, usernname or email address" name="username" >
+                <?php
+                session_start();
+                if(isset($_SESSION['error-email']))
+                {
+                    echo "<p class=fw-bold text-danger>{$_SESSION['error-email']} </p>";
+                }
+                unset($_SESSION['error-email']);
+                ?>
                 <div class="d-flex align-items-center border" style="  background-color: #FAFAFA !important">
                 <input type="password" class="rounded-0 form-control passin" placeholder="Password" name="username"  style="border:none">
                <span>
