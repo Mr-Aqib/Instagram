@@ -15,7 +15,7 @@
 <body>
     <?php
     session_start();
-     if(isset($_SESSION['name']))
+     if(isset($_SESSION['welcome']))
      {
         ?>
         <div class="flash text-center text-white w-25 fw-bold p-3 " style="margin-left: auto; background:linear-gradient(to right, red,orange,purple); transition: all 0.5s">
@@ -27,8 +27,9 @@
      else{
         header("Location: $base_url/signup-form.php");
      }
+     unset($_SESSION["welcome"]);
      ?>
-    
+
 </body>
 <script>
 let flash=document.querySelector('.flash')
