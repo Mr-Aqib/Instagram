@@ -18,4 +18,5 @@ if($result)
 else
 {
   $_SESSION['err-reg']="Error in Session";
+  header("Location: $current_url");
 }
