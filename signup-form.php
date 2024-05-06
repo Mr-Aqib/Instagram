@@ -56,7 +56,9 @@
                     </p>";
                 }
                 unset($_SESSION['error-email']);
+               
                 ?>
+                
             <p class="my-3 text-center" style="color:#737373; font-size: 65%;">People who use our service may have uploaded your contact information to Instagram. <a  style="color:#00376B; text-decoration: none;" href="">Learn more</a> </p>
             <p class="my-3 text-center" style=" color:#737373; font-size: 71%;">By signing up, you agree to our <a style="text-decoration: none;color:#00376B" href="">Terms</a> ,
             <a style="text-decoration: none;color:#00376B" href="">Privacy Policy</a>   and <a style="text-decoration: none;color:#00376B" href="">Cookies Policy.</a>  </p>
