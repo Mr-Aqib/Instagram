@@ -107,6 +107,17 @@
                </span>
 
                 </div>
+                <?php
+                session_start();
+                if (isset($_SESSION["lg-error"])) 
+                    {
+                        echo "<p class='text-center fw-bold text-danger'  style='font-size:13px'>
+                        {$_SESSION['lg-error']} 
+                        </p>";
+                    }
+                    unset($_SESSION['lg-error']);
+                   
+                ?>
                 <button class="text-white text-center  sign-in-btn w-100 my-2 py-1 rounded-2" style="text-decoration:none">Log in</button>
             </div>
             </form>
