@@ -96,18 +96,20 @@
         <div class="col-lg-5  px-4 right-sec d-flex flex-column gap-3 ">
             <div class="upper-div border">
             <img class=" d-block mx-auto" width="60%" src="./images/insta-logo.png" alt="">
+            <form action="./login-data.php" method="POST">
             <div class="input-div d-flex flex-column gap-2 my-2 " >
-                <input type="text" class="rounded-0 form-control" placeholder="Phone number, usernname or email address" name="username" >
+                <input type="text" class="rounded-0 form-control" placeholder="Phone number, usernname or email address" name="loginname" >
                 
                 <div class="d-flex align-items-center border" style="  background-color: #FAFAFA !important">
-                <input type="password" class="rounded-0 form-control passin" placeholder="Password" name="username"  style="border:none">
+                <input type="password" class="rounded-0 form-control passin" placeholder="Password" name="loginpass"  style="border:none">
                <span>
                <i class="bi eyeicon bi-eye-fill p-2 " style="display:none"></i>
                </span>
 
                 </div>
-                <button class="text-white  sign-in-btn w-100 my-2 py-1 rounded-2">Log in</button>
+                <button class="text-white text-center  sign-in-btn w-100 my-2 py-1 rounded-2" style="text-decoration:none">Log in</button>
             </div>
+            </form>
             <div class="hr d-flex align-items-center justify-content-center gap-3 my-2 ">
                 <hr style="width:40%">
                 <p class="or-p m-0" >OR</p>

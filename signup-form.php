@@ -66,7 +66,7 @@
             </form>
         </div>
         <div class="middle-div my-3  border  mx-auto" style="width: 350px;padding:1.4rem">
-        <p style="font-size: 14px;"  class=" d-block text-center m-0" >Have an account? <a href="" style="font-size:15px; text-decoration:none;font-weight:bold;color:#0095F7" > Log in</a></p>
+        <p style="font-size: 14px;"  class=" d-block text-center m-0" >Have an account? <a href="./home.php" style="font-size:15px; text-decoration:none;font-weight:bold;color:#0095F7" > Log in</a></p>
         </div>
         <div  class="lastdivs my-3  mx-auto" style="width: 350px;padding:10px 2.9rem">
             <p style="font-size:15px" class="text-center" >Get the App.</p>
