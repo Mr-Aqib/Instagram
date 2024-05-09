@@ -1,4 +1,4 @@
-<div class="card py-2 gap-1 d-flex flex-row"style="overflow-x:auto">
+<div class="card py-2 my-1 gap-1 d-flex flex-row"style="overflow-x:auto">
                         <div>
                             <img class="mx-3 rounded-circle" width="55px" height="55px" src="./images/profileimg.jpeg" alt="">
                         </div>

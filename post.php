@@ -1,4 +1,4 @@
-<div class="card my-3">
+<div class="card my-3 ">
 <div class="d-flex py-2 flex-row  justify-content-between">
 <div class="first gap-2 d-flex align-items-center">
 <img class="mx-2 rounded-circle" width="55px" height="55px" src="./userimgs/user3.avif" alt="">
@@ -12,7 +12,7 @@
 </div>
 </div>
 <div class="img mids">
-<img style="object-fit: cover;" class="" width="100%" height="600px" src="./userimgs/user1.avif" alt="">
+<img style="object-fit:cover;" class="" width="100%" height="800px" src="./userimgs/user1.avif" alt="">
 </div>
 <div class="my-1 last d-flex flex-row  justify-content-between">
     <div class="d-flex mx-2 gap-2 align-items-center justify-content-center">
