@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -7,8 +7,10 @@
     <title>Document</title>
 
 </head>
+<style>
 
-<body> -->
+</style>
+<body>
     <div class="container-fluid">
         <div class="row">
 
@@ -29,53 +31,14 @@
                     <a href="" class="text-dark fw-medium" style="text-decoration:none">Profile</a>
                 </div>
             </div>
-            <div class="col-lg-8">
-                <div class="container col-lg-11">
-                    <div class="card py-2 gap-1 d-flex flex-row" style="overflow-x:auto">
-                        <div>
-                            <img class="mx-3 rounded-circle" width="55px" height="55px" src="./images/profileimg.jpeg" alt="">
-                        </div>
-                        <div>
-                            <img class="mx-3 rounded-circle" width="55px" height="55px" src="./userimgs/user1.avif" alt="">
-                        </div>
-                        <div>
-                            <img class="mx-3 rounded-circle" width="55px" height="55px" src="./userimgs/user2.jpg" alt="">
-                        </div>
-                        <div>
-                            <img class="mx-3 rounded-circle" width="55px" height="55px" src="./userimgs/user3.avif" alt="">
-                        </div>
-                        <div>
-                            <img class="mx-3 rounded-circle" width="55px" height="55px" src="./userimgs/user4.avif" alt="">
-                        </div>
-                        <div>
-                            <img class="mx-3 rounded-circle" width="55px" height="55px" src="./userimgs/user5.avif" alt="">
-                        </div>
-                        <div>
-                            <img class="mx-3 rounded-circle" width="55px" height="55px" src="./userimgs/user6.avif" alt="">
-                        </div>
-                        <div>
-                            <img class="mx-3 rounded-circle" width="55px" height="55px" src="./userimgs/user7.avif" alt="">
-                        </div>
-                        <div>
-                            <img class="mx-3 rounded-circle" width="55px" height="55px" src="./images/profileimg.jpeg" alt="">
-                        </div>
-                        <div>
-                            <img class="mx-3 rounded-circle" width="55px" height="55px" src="./userimgs/user1.avif" alt="">
-                        </div>
-                        <div>
-                            <img class="mx-3 rounded-circle" width="55px" height="55px" src="./userimgs/user2.jpg" alt="">
-                        </div>
-                        <div>
-                            <img class="mx-3 rounded-circle" width="55px" height="55px" src="./userimgs/user3.avif" alt="">
-                        </div>
-                        <div>
-                            <img class="mx-3 rounded-circle" width="55px" height="55px" src="./userimgs/user4.avif" alt="">
-                        </div>
-                    </div>
+            <div class="col-lg-7">
+                <div class="container col-lg-9" >
+                <?php include './story.php'?>
+                    <?php include './post.php'?>
                 </div>
             </div>
         </div>
     </div>
-<!-- </body>
+</body>
 
-</html> -->
+</html>

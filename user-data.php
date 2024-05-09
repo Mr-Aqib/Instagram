@@ -32,13 +32,14 @@ session_start();
             <?php echo $_SESSION['welcome']?>
         </h3>
         <?php
+        unset($_SESSION['welcome']);
     }
    }
    ?>
 
 
    <?php include './mainscreen.php';
-   unset($_SESSION['welcome'])?>
+   ?>
 
   
 
