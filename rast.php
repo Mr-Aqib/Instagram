@@ -1,17 +1,4 @@
-<?php 
-    session_start();
-    if(isset($_SESSION['welcome']) && isset($_SESSION['fname']))
-    {
-        ?>
-        <h3 class="flash text-center  text-white w-25 " style="background:linear-gradient(to right, red,orange,purple);margin-left:auto">
+
+    <h3  class="flash text-center  text-white w-25 " style="position:fixed; top:0; right:0; background:linear-gradient(to right, red,orange,purple);margin-left:auto; transition:all .3s">
             <?php echo $_SESSION['welcome']?>
         </h3>
-        <?php 
-        
-    }
-    else 
-    {
-        header("Location: $base_url/signup-form.php");
-    }
-    unset($_SESSION["welcome"]);
-    ?>
