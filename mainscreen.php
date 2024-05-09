@@ -11,12 +11,14 @@
 <style>
 ::-webkit-scrollbar {
     width: 4px;
-    height: 10px;
+    height: 5px;
+    cursor: grab;
 }
 
 ::-webkit-scrollbar-thumb {
-
+    cursor: grab;
     background: linear-gradient(to right, red, purple, orange);
+
 }
 </style>
 
@@ -30,7 +32,7 @@
             </div>
             <div class="col-lg-7">
                 <div class="container col-lg-9" style="height:100vh; overflow-y:auto">
-                    <div class="card  py-2 my-1 gap-1 d-flex flex-row" style="overflow-x:auto">
+                    <div class="card  py-2 my-1 gap-1 d-flex flex-row" style="overflow-x:scroll">
                         <?php include './story.php' ?>
                     </div>
                     <?php include './post.php' ?>

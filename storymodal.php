@@ -1,11 +1,8 @@
-<!-- Button trigger modal -->
-
 <span type="button" class="d-flex flex-row gap-2 border-0 bg-white" data-toggle="modal" data-target="#exampleModal">
     <i class="bi bi-plus-square"></i>
-    <div>Create</div>
+    <div>Create Story</div>
 </span>
 
-<!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
     <div class="modal-dialog" role="document">
